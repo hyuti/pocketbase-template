@@ -2,7 +2,7 @@
 
 package runtime
 
-// The schema-stitching logic is generated in github.com/TcMits/ent-clean-template/ent/runtime.go
+// The schema-stitching logic is generated in github.com/hyuti/pocketbase-clean-template/ent/runtime.go
 
 const (
 	Version = "v0.11.4-0.20221001062602-1029a2d3ba2a"           // Version of ent codegen.

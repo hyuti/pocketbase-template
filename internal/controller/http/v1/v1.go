@@ -1,12 +1,12 @@
 package v1
 
 import (
-	"github.com/TcMits/ent-clean-template/internal/controller/http/v1/middleware"
-	"github.com/TcMits/ent-clean-template/internal/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
-	useCaseModel "github.com/TcMits/ent-clean-template/pkg/entity/model/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
 	"github.com/go-playground/validator/v10"
+	"github.com/hyuti/pocketbase-clean-template/internal/controller/http/v1/middleware"
+	"github.com/hyuti/pocketbase-clean-template/internal/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
+	useCaseModel "github.com/hyuti/pocketbase-clean-template/pkg/entity/model/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 	"github.com/kataras/iris/v12"
 	"github.com/kataras/iris/v12/middleware/cors"
 )

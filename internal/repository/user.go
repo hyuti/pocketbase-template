@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/TcMits/ent-clean-template/ent"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
+	"github.com/hyuti/pocketbase-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
 )
 
 type (

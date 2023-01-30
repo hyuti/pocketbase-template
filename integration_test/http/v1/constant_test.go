@@ -6,11 +6,11 @@ import (
 	"testing"
 
 	. "github.com/Eun/go-hit"
-	"github.com/TcMits/ent-clean-template/config"
-	"github.com/TcMits/ent-clean-template/ent"
-	"github.com/TcMits/ent-clean-template/pkg/entity/factory"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/datastore"
+	"github.com/hyuti/pocketbase-clean-template/config"
+	"github.com/hyuti/pocketbase-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/factory"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/datastore"
 	"github.com/stretchr/testify/require"
 )
 

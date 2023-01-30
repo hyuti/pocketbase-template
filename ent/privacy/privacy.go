@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/TcMits/ent-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/ent"
 
 	"entgo.io/ent/entql"
 	"entgo.io/ent/privacy"

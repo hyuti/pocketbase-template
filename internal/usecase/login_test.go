@@ -11,10 +11,10 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/TcMits/ent-clean-template/internal/repository"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
-	useCaseModel "github.com/TcMits/ent-clean-template/pkg/entity/model/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/tool/password"
+	"github.com/hyuti/pocketbase-clean-template/internal/repository"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
+	useCaseModel "github.com/hyuti/pocketbase-clean-template/pkg/entity/model/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/tool/password"
 )
 
 func TestNewLoginUseCase(t *testing.T) {

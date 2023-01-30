@@ -10,11 +10,11 @@ import (
 	"github.com/kataras/iris/v12/httptest"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 
-	"github.com/TcMits/ent-clean-template/internal/testutils"
-	"github.com/TcMits/ent-clean-template/internal/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
-	useCaseModel "github.com/TcMits/ent-clean-template/pkg/entity/model/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-clean-template/internal/testutils"
+	"github.com/hyuti/pocketbase-clean-template/internal/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
+	useCaseModel "github.com/hyuti/pocketbase-clean-template/pkg/entity/model/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 )
 
 func Test_Permission(t *testing.T) {

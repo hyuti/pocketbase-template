@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/TcMits/ent-clean-template/pkg/tool/generic"
+	"github.com/hyuti/pocketbase-clean-template/pkg/tool/generic"
 )
 
 const (

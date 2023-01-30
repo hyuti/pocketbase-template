@@ -4,11 +4,11 @@ import (
 	"context"
 	"log"
 
-	"github.com/TcMits/ent-clean-template/config"
-	"github.com/TcMits/ent-clean-template/ent"
-	"github.com/TcMits/ent-clean-template/ent/migrate"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/datastore"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-clean-template/config"
+	"github.com/hyuti/pocketbase-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/ent/migrate"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/datastore"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 )
 
 func main() {

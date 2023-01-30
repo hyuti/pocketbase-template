@@ -10,7 +10,7 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
-	"github.com/TcMits/ent-clean-template/ent/user"
+	"github.com/hyuti/pocketbase-clean-template/ent/user"
 )
 
 // ent aliases to avoid import conflicts in user's code.

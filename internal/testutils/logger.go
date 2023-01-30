@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+import "github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 
 var _ logger.Interface = &NullLogger{}
 

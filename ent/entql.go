@@ -3,7 +3,7 @@
 package ent
 
 import (
-	"github.com/TcMits/ent-clean-template/ent/user"
+	"github.com/hyuti/pocketbase-clean-template/ent/user"
 
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"

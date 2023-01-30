@@ -4,7 +4,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/TcMits/ent-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/ent"
 )
 
 //go:generate mockgen -source=interfaces.go -destination=./mocks.go -package=repository

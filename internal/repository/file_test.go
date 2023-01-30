@@ -12,7 +12,7 @@ import (
 	"go.beyondstorage.io/v5/pkg/randbytes"
 	"go.beyondstorage.io/v5/types"
 
-	"github.com/TcMits/ent-clean-template/internal/testutils"
+	"github.com/hyuti/pocketbase-clean-template/internal/testutils"
 )
 
 func TestNewFileRepository(t *testing.T) {

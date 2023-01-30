@@ -3,8 +3,8 @@ package v1
 import (
 	"html/template"
 
-	_ "github.com/TcMits/ent-clean-template/docs"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+	_ "github.com/hyuti/pocketbase-clean-template/docs"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 	"github.com/kataras/iris/v12"
 	"github.com/swaggo/swag"
 )

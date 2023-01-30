@@ -6,11 +6,11 @@ import (
 	"io"
 	"time"
 
-	"github.com/TcMits/ent-clean-template/ent"
-	"github.com/TcMits/ent-clean-template/internal/repository"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
-	"github.com/TcMits/ent-clean-template/pkg/tool/generic"
+	"github.com/hyuti/pocketbase-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/internal/repository"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-clean-template/pkg/tool/generic"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	"github.com/TcMits/ent-clean-template/internal/repository"
+	"github.com/hyuti/pocketbase-clean-template/internal/repository"
 )
 
 func Test_getModelUseCase_Get(t *testing.T) {

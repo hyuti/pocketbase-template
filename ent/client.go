@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/TcMits/ent-clean-template/ent/migrate"
 	"github.com/google/uuid"
+	"github.com/hyuti/pocketbase-clean-template/ent/migrate"
 
-	"github.com/TcMits/ent-clean-template/ent/user"
+	"github.com/hyuti/pocketbase-clean-template/ent/user"
 
 	"entgo.io/ent/dialect"
 	"entgo.io/ent/dialect/sql"

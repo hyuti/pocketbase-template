@@ -1,4 +1,4 @@
-module github.com/TcMits/ent-clean-template
+module github.com/hyuti/pocketbase-clean-template
 
 go 1.19
 

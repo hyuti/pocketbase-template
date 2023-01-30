@@ -3,9 +3,9 @@ package v1
 import (
 	"testing"
 
-	_ "github.com/TcMits/ent-clean-template/docs"
-	"github.com/TcMits/ent-clean-template/internal/testutils"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+	_ "github.com/hyuti/pocketbase-clean-template/docs"
+	"github.com/hyuti/pocketbase-clean-template/internal/testutils"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 	"github.com/kataras/iris/v12"
 )
 

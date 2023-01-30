@@ -1,9 +1,9 @@
 /* Specify the name of the generated file's package. */ package copygen
 
 import (
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model/usecase"
-	useCaseModel "github.com/TcMits/ent-clean-template/pkg/entity/model/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model/usecase"
+	useCaseModel "github.com/hyuti/pocketbase-clean-template/pkg/entity/model/usecase"
 )
 
 type Copygen interface {

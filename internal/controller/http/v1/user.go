@@ -3,13 +3,13 @@ package v1
 import (
 	"fmt"
 
-	"github.com/TcMits/ent-clean-template/internal/controller/http/v1/middleware"
-	"github.com/TcMits/ent-clean-template/internal/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-clean-template/internal/controller/http/v1/middleware"
+	"github.com/hyuti/pocketbase-clean-template/internal/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 	"github.com/kataras/iris/v12"
 
-	useCaseModel "github.com/TcMits/ent-clean-template/pkg/entity/model/usecase"
+	useCaseModel "github.com/hyuti/pocketbase-clean-template/pkg/entity/model/usecase"
 )
 
 const (

@@ -5,9 +5,9 @@ package ent
 import (
 	"time"
 
-	"github.com/TcMits/ent-clean-template/ent/schema"
-	"github.com/TcMits/ent-clean-template/ent/user"
 	"github.com/google/uuid"
+	"github.com/hyuti/pocketbase-clean-template/ent/schema"
+	"github.com/hyuti/pocketbase-clean-template/ent/user"
 )
 
 // The init function reads all schema descriptors with runtime code

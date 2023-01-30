@@ -55,13 +55,13 @@ docker run --rm -v $(PWD)/docs:/work openapitools/openapi-generator-cli:latest-r
 ```
 
 ### Changing between openapi v2/v3:
-Change [docs.go](https://github.com/TcMits/ent-clean-template/blob/master/docs/docs.go)
+Change [docs.go](https://github.com/hyuti/pocketbase-clean-template/blob/master/docs/docs.go)
 
 ```go
 package docs
 
-import _ "github.com/TcMits/ent-clean-template/docs/v3" // replace this
-// import _ "github.com/TcMits/ent-clean-template/docs/v2"
+import _ "github.com/hyuti/pocketbase-clean-template/docs/v3" // replace this
+// import _ "github.com/hyuti/pocketbase-clean-template/docs/v2"
 ```
 
 

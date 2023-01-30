@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"entgo.io/ent/dialect/sql"
-	"github.com/TcMits/ent-clean-template/ent/predicate"
-	"github.com/TcMits/ent-clean-template/ent/user"
 	"github.com/google/uuid"
+	"github.com/hyuti/pocketbase-clean-template/ent/predicate"
+	"github.com/hyuti/pocketbase-clean-template/ent/user"
 )
 
 // User is the model entity for the User schema.

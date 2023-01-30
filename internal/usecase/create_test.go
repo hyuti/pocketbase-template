@@ -12,10 +12,10 @@ import (
 	gomock "github.com/golang/mock/gomock"
 	"go.beyondstorage.io/v5/pkg/randbytes"
 
-	"github.com/TcMits/ent-clean-template/ent"
-	"github.com/TcMits/ent-clean-template/internal/repository"
-	"github.com/TcMits/ent-clean-template/internal/testutils"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/internal/repository"
+	"github.com/hyuti/pocketbase-clean-template/internal/testutils"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 )
 
 func Test_createModelUseCase_Create(t *testing.T) {

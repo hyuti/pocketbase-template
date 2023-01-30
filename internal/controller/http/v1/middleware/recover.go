@@ -7,7 +7,7 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 	"github.com/kataras/iris/v12"
 	"github.com/kataras/iris/v12/context"
 )

@@ -5,8 +5,8 @@ import (
 
 	"github.com/bluele/factory-go/factory"
 
-	"github.com/TcMits/ent-clean-template/ent"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
+	"github.com/hyuti/pocketbase-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
 )
 
 type generator[MutationType ent.Mutation, MutationInputType model.MutationInput[MutationType]] struct {

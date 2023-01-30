@@ -1,9 +1,9 @@
 package model
 
 import (
-	"github.com/TcMits/ent-clean-template/ent"
-	"github.com/TcMits/ent-clean-template/ent/predicate"
-	"github.com/TcMits/ent-clean-template/ent/user"
+	"github.com/hyuti/pocketbase-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/ent/predicate"
+	"github.com/hyuti/pocketbase-clean-template/ent/user"
 )
 
 // OrderableColumns holds all SQL columns for ordering.

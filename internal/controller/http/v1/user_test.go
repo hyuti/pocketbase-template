@@ -3,12 +3,12 @@ package v1
 import (
 	"testing"
 
-	"github.com/TcMits/ent-clean-template/internal/testutils"
-	"github.com/TcMits/ent-clean-template/internal/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
-	useCaseModel "github.com/TcMits/ent-clean-template/pkg/entity/model/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
 	"github.com/golang/mock/gomock"
+	"github.com/hyuti/pocketbase-clean-template/internal/testutils"
+	"github.com/hyuti/pocketbase-clean-template/internal/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
+	useCaseModel "github.com/hyuti/pocketbase-clean-template/pkg/entity/model/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 	"github.com/kataras/iris/v12"
 )
 

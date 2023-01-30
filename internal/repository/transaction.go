@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/TcMits/ent-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/ent"
 )
 
 type transactionRepository struct {

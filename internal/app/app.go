@@ -7,14 +7,14 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/TcMits/ent-clean-template/config"
-	v1 "github.com/TcMits/ent-clean-template/internal/controller/http/v1"
-	"github.com/TcMits/ent-clean-template/internal/repository"
-	"github.com/TcMits/ent-clean-template/internal/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/datastore"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/httpserver"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
-	"github.com/TcMits/ent-clean-template/pkg/tool"
+	"github.com/hyuti/pocketbase-clean-template/config"
+	v1 "github.com/hyuti/pocketbase-clean-template/internal/controller/http/v1"
+	"github.com/hyuti/pocketbase-clean-template/internal/repository"
+	"github.com/hyuti/pocketbase-clean-template/internal/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/datastore"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/httpserver"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-clean-template/pkg/tool"
 )
 
 // Run creates objects via constructors.

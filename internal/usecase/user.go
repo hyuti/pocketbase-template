@@ -7,14 +7,14 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/TcMits/ent-clean-template/copygen"
-	"github.com/TcMits/ent-clean-template/ent"
-	"github.com/TcMits/ent-clean-template/ent/user"
-	"github.com/TcMits/ent-clean-template/internal/repository"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
-	useCaseModel "github.com/TcMits/ent-clean-template/pkg/entity/model/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/tool/lazy"
 	"github.com/google/uuid"
+	"github.com/hyuti/pocketbase-clean-template/copygen"
+	"github.com/hyuti/pocketbase-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/ent/user"
+	"github.com/hyuti/pocketbase-clean-template/internal/repository"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
+	useCaseModel "github.com/hyuti/pocketbase-clean-template/pkg/entity/model/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/tool/lazy"
 )
 
 const (

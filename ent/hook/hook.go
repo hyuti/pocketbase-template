@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/TcMits/ent-clean-template/ent"
+	"github.com/hyuti/pocketbase-clean-template/ent"
 )
 
 // The UserFunc type is an adapter to allow the use of ordinary

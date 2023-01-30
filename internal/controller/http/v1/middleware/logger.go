@@ -7,7 +7,7 @@ import (
 
 	"github.com/kataras/iris/v12"
 
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 )
 
 func Logger(l logger.Interface) iris.Handler {

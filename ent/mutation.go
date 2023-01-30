@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/TcMits/ent-clean-template/ent/predicate"
-	"github.com/TcMits/ent-clean-template/ent/user"
 	"github.com/google/uuid"
+	"github.com/hyuti/pocketbase-clean-template/ent/predicate"
+	"github.com/hyuti/pocketbase-clean-template/ent/user"
 
 	"entgo.io/ent"
 )

@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/TcMits/ent-clean-template/internal/repository"
-	"github.com/TcMits/ent-clean-template/pkg/entity/model"
+	"github.com/hyuti/pocketbase-clean-template/internal/repository"
+	"github.com/hyuti/pocketbase-clean-template/pkg/entity/model"
 )
 
 var (

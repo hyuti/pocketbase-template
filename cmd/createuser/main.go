@@ -5,9 +5,9 @@ import (
 	"flag"
 	"log"
 
-	"github.com/TcMits/ent-clean-template/config"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/datastore"
-	"github.com/TcMits/ent-clean-template/pkg/tool/password"
+	"github.com/hyuti/pocketbase-clean-template/config"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/datastore"
+	"github.com/hyuti/pocketbase-clean-template/pkg/tool/password"
 )
 
 func main() {

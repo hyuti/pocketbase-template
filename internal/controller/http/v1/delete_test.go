@@ -8,9 +8,9 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/kataras/iris/v12/httptest"
 
-	"github.com/TcMits/ent-clean-template/internal/testutils"
-	"github.com/TcMits/ent-clean-template/internal/usecase"
-	"github.com/TcMits/ent-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-clean-template/internal/testutils"
+	"github.com/hyuti/pocketbase-clean-template/internal/usecase"
+	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
 )
 
 func Test_getDeleteHandler(t *testing.T) {

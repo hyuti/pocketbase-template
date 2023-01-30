@@ -9,8 +9,8 @@ import (
 	io "io"
 	reflect "reflect"
 
-	ent "github.com/TcMits/ent-clean-template/ent"
 	gomock "github.com/golang/mock/gomock"
+	ent "github.com/hyuti/pocketbase-clean-template/ent"
 )
 
 // MockTransactionRepository is a mock of TransactionRepository interface.

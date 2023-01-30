@@ -4,8 +4,8 @@
 /* Specify the name of the generated file's package. */ package copygen
 
 import (
-	"github.com/TcMits/ent-clean-template/ent"
-	useCaseModel "github.com/TcMits/ent-clean-template/pkg/entity/model/usecase"
+	"github.com/hyuti/pocketbase-clean-template/ent"
+	useCaseModel "github.com/hyuti/pocketbase-clean-template/pkg/entity/model/usecase"
 )
 
 // LoginInputToUserWhereInput copies a *useCaseModel.LoginInput to a *ent.UserWhereInput.

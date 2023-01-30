@@ -3,8 +3,8 @@ package usecase
 import (
 	"context"
 
-	"github.com/TcMits/ent-clean-template/internal/repository"
-	"github.com/TcMits/ent-clean-template/pkg/tool/generic"
+	"github.com/hyuti/pocketbase-clean-template/internal/repository"
+	"github.com/hyuti/pocketbase-clean-template/pkg/tool/generic"
 )
 
 type ConvertFunc[FromType, ToType any] func(context.Context, FromType) (ToType, error)

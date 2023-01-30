@@ -3,7 +3,7 @@ package usecase
 import (
 	"context"
 
-	"github.com/TcMits/ent-clean-template/pkg/tool/generic"
+	"github.com/hyuti/pocketbase-clean-template/pkg/tool/generic"
 )
 
 type basePermissionCheckerUseCase[UserType any] struct {
