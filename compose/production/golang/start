@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+/app migrate up
+/app createuser
+/app serve --http=0.0.0.0:$HTTP_PORT

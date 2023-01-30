@@ -1,13 +1,12 @@
 app:
-  name: 'ent-clean-template'
+  name: 'pocketbase-clean-template'
   version: '1.0.0'
-
-http:
-  port: '8080'
+  debug: true
+  email: "admin@gmail.com"
+  password: "adminadmin"
 
 logger:
-  log_level: 'info'
+  logLevel: 'info'
 
-postgres:
-  pool_max: 90
-
+db:
+  dataDir: './.data'

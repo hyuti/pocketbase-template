@@ -4,5 +4,6 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-go run ./cmd/migrate
+go run main.go migrate up
+go run main.go createuser
 air -c .air.toml

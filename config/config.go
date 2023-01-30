@@ -12,14 +12,16 @@ type (
 		App  `yaml:"app"`
 		HTTP `yaml:"http"`
 		Log  `yaml:"logger"`
-		PG   `yaml:"postgres"`
-		LoginUseCase
+		DB   `yaml:"db"`
 	}
 
 	// App -.
 	App struct {
-		Name    string `env-required:"true" yaml:"name"    env:"APP_NAME"`
-		Version string `env-required:"true" yaml:"version" env:"APP_VERSION"`
+		Name     string `env-required:"true" yaml:"name"    env:"APP_NAME"`
+		Version  string `env-required:"true" yaml:"version" env:"APP_VERSION"`
+		Debug    bool   `env-required:"true" yaml:"debug" env:"APP_DEBUG"`
+		Email    string `env-required:"true" yaml:"email" env:"APP_EMAIL"`
+		Password string `env-required:"true" yaml:"password" env:"APP_PASSWORD"`
 	}
 
 	// HTTP -.
@@ -27,20 +29,14 @@ type (
 		Port string `env-required:"true" yaml:"port" env:"HTTP_PORT"`
 	}
 
+	// DB -.
+	DB struct {
+		DataDir string `env-required:"true" yaml:"dataDir" env:"DB_DATA_DIR"`
+	}
+
 	// Log -.
 	Log struct {
-		Level string `env-required:"true" yaml:"log_level" env:"LOG_LEVEL"`
-	}
-
-	// PG -.
-	PG struct {
-		PoolMax int    `env-required:"true" yaml:"pool_max" env:"PG_POOL_MAX" env-default:"90"`
-		URL     string `env-required:"true"                 env:"PG_URL"`
-	}
-
-	// Usecases.
-	LoginUseCase struct {
-		Secret string `env-required:"true" env:"LOGIN_USECASE_SECRET"`
+		Level string `env-required:"true" yaml:"logLevel" env:"LOG_LEVEL"`
 	}
 )
 

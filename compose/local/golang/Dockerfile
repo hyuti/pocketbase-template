@@ -9,9 +9,9 @@ RUN sed -i 's/\r$//g' /start
 RUN chmod +x /start
 
 
-WORKDIR /ent-clean-template
+WORKDIR /pocketbase-clean-template
 
-COPY go.mod go.sum /ent-clean-template/
+COPY go.mod go.sum /pocketbase-clean-template/
 RUN go mod download
 RUN go install github.com/cosmtrek/air@latest
 
