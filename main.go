@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/hyuti/pocketbase-clean-template/config"
-	"github.com/hyuti/pocketbase-clean-template/internal/app"
+	"github.com/hyuti/pocketbase-template/config"
+	"github.com/hyuti/pocketbase-template/internal/app"
 )
 
 func main() {

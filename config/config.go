@@ -9,10 +9,11 @@ import (
 type (
 	// Config -.
 	Config struct {
-		App  `yaml:"app"`
-		HTTP `yaml:"http"`
-		Log  `yaml:"logger"`
-		DB   `yaml:"db"`
+		App   `yaml:"app"`
+		HTTP  `yaml:"http"`
+		Log   `yaml:"logger"`
+		DB    `yaml:"db"`
+		Redis `yaml:"redis"`
 	}
 
 	// App -.
@@ -32,6 +33,13 @@ type (
 	// DB -.
 	DB struct {
 		DataDir string `env-required:"true" yaml:"dataDir" env:"DB_DATA_DIR"`
+	}
+
+	// Redis -.
+	Redis struct {
+		URL      string `env-required:"true"                 env:"REDIS_DB_URL"`
+		Password string `env-required:"true"                 env:"REDIS_DB_PASSWORD"`
+		DB       int    `env-required:"true"                 env:"REDIS_DB"`
 	}
 
 	// Log -.

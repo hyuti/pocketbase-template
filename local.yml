@@ -1,16 +1,34 @@
 version: "3.7"
 
 services:
-    pocketbase-clean-template:
+    pocketbase-template:
         build:
             context: .
             dockerfile: ./compose/local/golang/Dockerfile
-        image: pocketbase-clean-template_dev
-        container_name: pocketbase-clean-template_dev
+        image: pocketbase-template_dev
+        container_name: pocketbase-template_dev
         volumes:
-            - .:/pocketbase-clean-template:z
+            - .:/pocketbase-template:z
         env_file:
             - ./.envs/.local/.golang
+            - ./.envs/.local/.redis
         command: /start
         ports:
             - 8080:8080
+
+    redis:
+        image: redis:alpine
+        ports:
+            - 6379:6379
+        container_name: redis_db_dev
+
+    asynq-monitor:
+        image: hibiken/asynqmon 
+        container_name: asynq_monitor_dev
+        env_file:
+            - ./.envs/.local/.redis
+            - ./.envs/.local/.asynq
+        ports:
+            - 8081:8081
+        depends_on:
+            - redis

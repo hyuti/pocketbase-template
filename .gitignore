@@ -26,11 +26,13 @@ vendor/
 tmp/
 testdata/
 
-pocketbase-clean-template
+pocketbase-template
 *.log
 
 .envs/.production/*
 !.envs/.production/*.sample
+.envs/.local/*
+!.envs/.local/*.sample
 
 # db
 .data/

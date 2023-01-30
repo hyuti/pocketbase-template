@@ -1,5 +1,5 @@
 app:
-  name: 'pocketbase-clean-template'
+  name: 'pocketbase-template'
   version: '1.0.0'
   debug: true
   email: "admin@gmail.com"

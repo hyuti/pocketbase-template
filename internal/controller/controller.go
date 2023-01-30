@@ -3,8 +3,8 @@ package controller
 import (
 	"net/http"
 
-	"github.com/hyuti/pocketbase-clean-template/config"
-	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-template/config"
+	"github.com/hyuti/pocketbase-template/pkg/infrastructure/logger"
 	"github.com/labstack/echo/v5"
 	"github.com/pocketbase/pocketbase"
 	"github.com/pocketbase/pocketbase/core"
@@ -22,7 +22,9 @@ func RegisterRoutes(handler core.App, l logger.Interface) {
 		router := Router{
 			handler: e.Router,
 		}
+		// Register more routes here
 		RegisterHealthRoute(&router)
+
 		return nil
 	})
 }

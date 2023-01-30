@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"github.com/hyuti/pocketbase-clean-template/cmd/createuser"
-	"github.com/hyuti/pocketbase-clean-template/config"
-	"github.com/hyuti/pocketbase-clean-template/pkg/infrastructure/logger"
+	"github.com/hyuti/pocketbase-template/cmd/createuser"
+	"github.com/hyuti/pocketbase-template/config"
+	"github.com/hyuti/pocketbase-template/pkg/infrastructure/logger"
 	"github.com/pocketbase/pocketbase"
 	"github.com/spf13/cobra"
 )
