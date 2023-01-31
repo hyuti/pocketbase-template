@@ -9,10 +9,10 @@ import (
 	"github.com/hyuti/pocketbase-template/internal/controller"
 	"github.com/hyuti/pocketbase-template/internal/schedule"
 	"github.com/hyuti/pocketbase-template/internal/task"
+	"github.com/hyuti/pocketbase-template/internal/validation"
 	"github.com/hyuti/pocketbase-template/internal/webapi"
 	_ "github.com/hyuti/pocketbase-template/migrations"
 	"github.com/hyuti/pocketbase-template/pkg/infrastructure/logger"
-	"github.com/pocketbase/pocketbase/plugins/migratecmd"
 	"github.com/robfig/cron/v3"
 )
 
@@ -25,10 +25,6 @@ func Run(cfg *config.Config) {
 
 	// Register cmd
 	cmd.RegisterCMD(handler, l, cfg)
-
-	migratecmd.MustRegister(handler, handler.RootCmd, &migratecmd.Options{
-		Automigrate: true,
-	})
 
 	controller.RegisterRoutes(handler, l)
 
@@ -49,6 +45,9 @@ func Run(cfg *config.Config) {
 		sLer,
 		task.GetSayHelloExecutor(taskClient),
 	)
+
+	// Register validation
+	validation.RegisterValidation(handler, l, cfg)
 
 	go startBackGroundTaskServer(workerServer, l)
 	startJobSchedule(sLer)
