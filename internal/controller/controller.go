@@ -22,11 +22,13 @@ func RegisterRoutes(handler core.App, l logger.Interface) {
 		router := Router{
 			handler: e.Router,
 		}
-		// Register more routes here
-		RegisterHealthRoute(&router)
+		registerRoutes(&router)
 
 		return nil
 	})
+}
+func registerRoutes(handler *Router) {
+	// Register more routes here
 }
 
 func createRoute(method, path string, handler echo.HandlerFunc) *echo.Route {
