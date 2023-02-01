@@ -13,6 +13,7 @@ import (
 	"github.com/hyuti/pocketbase-template/internal/webapi"
 	_ "github.com/hyuti/pocketbase-template/migrations"
 	"github.com/hyuti/pocketbase-template/pkg/infrastructure/logger"
+	"github.com/pocketbase/pocketbase"
 	"github.com/robfig/cron/v3"
 )
 
@@ -49,17 +50,28 @@ func Run(cfg *config.Config) {
 	// Register validation
 	validation.RegisterValidation(handler, l, cfg)
 
-	go startBackGroundTaskServer(workerServer, l)
-	startJobSchedule(sLer)
-	if err := handler.Start(); err != nil {
-		l.Fatal(err)
+	errFromBGServer := make(chan error, 1)
+	errFromHTTPServer := make(chan error, 1)
+	go startBackGroundTaskServer(workerServer, errFromBGServer)
+	go startHTTPServer(handler, errFromHTTPServer)
+	go startJobSchedule(sLer)
+	if err := <-errFromBGServer; err != nil {
+		l.Fatal(fmt.Errorf("internal.app.Run: %w", err))
 	}
-}
-func startBackGroundTaskServer(s *task.Server, l logger.Interface) {
-	if err := s.Run(); err != nil {
-		l.Fatal(fmt.Errorf("app - Run - workerServer.Run: %w", err))
+	if err := <-errFromHTTPServer; err != nil {
+		l.Fatal(fmt.Errorf("internal.app.Run: %w", err))
 	}
+
 }
+
+func startBackGroundTaskServer(s *task.Server, errChan chan error) {
+	errChan <- s.Run()
+}
+
+func startHTTPServer(s *pocketbase.PocketBase, errChan chan error) {
+	errChan <- s.Start()
+}
+
 func startJobSchedule(handler *cron.Cron) {
 	schedule.Start(handler)
 }

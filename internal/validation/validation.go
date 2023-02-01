@@ -21,10 +21,12 @@ func registerBeforeCreateValidator(hooks validatorMap) {
 	// add more before create validators here
 	registerDemoBeforeCreate(hooks)
 }
+
 func registerBeforeUpdateValidator(hooks validatorMap) {
 	// add more before update validators here
 	registerDemoBeforeUpdate(hooks)
 }
+
 func registerBeforeDeleteValidator(hooks validatorMap) {
 	// add more before delete validators here
 	registerDemoBeforeDelete(hooks)
@@ -59,6 +61,7 @@ func registerBeforeUpdate(handler core.App, l logger.Interface, cfg *config.Conf
 		return nil
 	})
 }
+
 func registerBeforeDelete(handler core.App, l logger.Interface, cfg *config.Config) {
 	hooks := make(validatorMap)
 

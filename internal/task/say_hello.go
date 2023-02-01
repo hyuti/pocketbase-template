@@ -56,7 +56,7 @@ func sayHelloTaskHandlerWrapper(l logger.Interface, txtGenerator webapi.IDummyTe
 		if err != nil {
 			return err
 		}
-		l.Info(fmt.Sprintf("%s: %s", p.Message, dummyTxt))
+		l.Info(fmt.Sprintf("internal.task.sayHelloTaskHandlerWrapper: %s: %s", p.Message, dummyTxt))
 		return nil
 	}
 }
