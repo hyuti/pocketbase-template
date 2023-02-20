@@ -3,7 +3,7 @@ module github.com/hyuti/pocketbase-template
 go 1.19
 
 require (
-	github.com/golang-jwt/jwt/v4 v4.4.3
+	github.com/golang-jwt/jwt/v4 v4.5.0
 	github.com/hibiken/asynq v0.24.0
 	github.com/ilyakaznacheev/cleanenv v1.4.2
 	github.com/kataras/iris/v12 v12.2.0-beta5.0.20221020081905-bdceab934246
